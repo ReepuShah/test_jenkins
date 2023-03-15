@@ -1,0 +1,539 @@
+<html>
+<head>
+<title>TestNG:  Test - 1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test - 1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>92/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 12 13:47:15 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2622 seconds (2622860 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Suggest_Improvement_Option()'><b>Verify_Suggest_Improvement_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>12</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Upload_Email_Button_Option()'><b>Verify_Upload_Email_Button_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>154</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Field_Appears_On_Sign_Up_Page()'><b>Verify_All_Required_Field_Appears_On_Sign_Up_Page</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Latest_Update_Navigation()'><b>Verify_Latest_Update_Navigation</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Power_Ups_Option()'><b>Verify_Power_Ups_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Text_Relevant_Results_Show_Up()'><b>Verify_Text_Relevant_Results_Show_Up</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>17</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Compare_All_Functionality_Appears_With_Group_By_Functionality()'><b>Verify_Compare_All_Functionality_Appears_With_Group_By_Functionality</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>62</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_If_One_The_Information_Is_Filled_Wrong()'><b>Verify_If_One_The_Information_Is_Filled_Wrong</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Connect_Web_Sites_Button_Option()'><b>Verify_Connect_Web_Sites_Button_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>153</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Setting_And_LogOut_Options_Will_Appears()'><b>Verify_Setting_And_LogOut_Options_Will_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>96</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Logo_Appears_In_The_Each_Navigation_Page_Of_The_Website()'><b>Verify_Logo_Appears_In_The_Each_Navigation_Page_Of_The_Website</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Connect_EDGAR_Button_Option()'><b>Verify_Connect_EDGAR_Button_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>103</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Understanding_Questions_Asked_To_Nesh()'><b>Verify_Understanding_Questions_Asked_To_Nesh</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>18</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Files_Options_Appears()'><b>Verify_All_Required_Files_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>7</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_EDGAR_Options_Appears()'><b>Verify_All_Required_EDGAR_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>52</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Password_Field_Masks_The_Password()'><b>Verify_Password_Field_Masks_The_Password</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Tab_Button_Is_Used_To_Nevigate_To_Next_Field()'><b>Verify_Tab_Button_Is_Used_To_Nevigate_To_Next_Field</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Data_Connector_Options_Appears()'><b>Verify_All_Required_Data_Connector_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>7</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_If_Password_Field_Is_Blank()'><b>Verify_If_Password_Field_Is_Blank</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Upload_FAQs_Button_Option()'><b>Verify_Upload_FAQs_Button_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>475</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Upload_File_Button_Option()'><b>Verify_Upload_File_Button_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>155</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Email_id_Text_field_with_Other_Special_Sign()'><b>Verify_Email_id_Text_field_with_Other_Special_Sign</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Options_Appears_In_The_Help_Page()'><b>Verify_All_Required_Options_Appears_In_The_Help_Page</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>8</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Log_In_Link_Button()'><b>Verify_Log_In_Link_Button</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>11</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Better_Understanding_Of_Questions_For_Better_Results()'><b>Verify_Better_Understanding_Of_Questions_For_Better_Results</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>18</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Answer_Appear_From_Transcript_Text_In_Documented_Date_Format()'><b>Verify_Answer_Appear_From_Transcript_Text_In_Documented_Date_Format</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>14</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_SignUp_Page_Load_With_None_Of_The_Data_Into_The_Text_Field()'><b>Verify_SignUp_Page_Load_With_None_Of_The_Data_Into_The_Text_Field</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_The_SignUp_Button_Without_Filling_Up_Any_Data_On_The_SignUp_Page()'><b>Verify_The_SignUp_Button_Without_Filling_Up_Any_Data_On_The_SignUp_Page</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Search_Button_Without_Entering_Any_Keyword()'><b>Verify_Search_Button_Without_Entering_Any_Keyword</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Blob_Storage_Options_Appears()'><b>Verify_All_Required_Blob_Storage_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>52</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Report_A_Bug_Option()'><b>Verify_Report_A_Bug_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>11</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Power_Ups_Options_Appears()'><b>Verify_All_Required_Power_Ups_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Understanding_Questions_For_Precise_Results()'><b>Verify_Understanding_Questions_For_Precise_Results</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>18</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.VerifyEDGARoption()'><b>VerifyEDGARoption</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>7</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Connect_Share_point_Account_Option()'><b>Verify_Connect_Share_point_Account_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>103</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Compare_All_Functionality_Appears_With_Relevance_Functionality()'><b>Verify_Compare_All_Functionality_Appears_With_Relevance_Functionality</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>16</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Upload_Files_Options_Appears()'><b>Verify_All_Required_Upload_Files_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>54</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Web_Sites_Options_Appears()'><b>Verify_All_Required_Web_Sites_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>51</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Email_File_Options_Appears()'><b>Verify_All_Required_Email_File_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>52</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Files_Option()'><b>Verify_Files_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Login_Page_Does_Not_Allowed_Accessing_Page_Without_Login_in()'><b>Verify_Login_Page_Does_Not_Allowed_Accessing_Page_Without_Login_in</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Understanding_Questions_For_Better_Results()'><b>Verify_Understanding_Questions_For_Better_Results</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>18</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Blob_Storage_Option()'><b>Verify_Blob_Storage_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>9</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Nesh_Logo_Button()'><b>Verify_Nesh_Logo_Button</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>9</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Data_Connectors_Are_Available()'><b>Verify_All_Data_Connectors_Are_Available</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Data_Manager_Navigation()'><b>Verify_Data_Manager_Navigation</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>7</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Click_On_Search_Button()'><b>Verify_Click_On_Search_Button</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Admin_Is_Able_To_Add_A_New_Company()'><b>Verify_Admin_Is_Able_To_Add_A_New_Company</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>53</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Filtering_Query_Results_Using_Sentiment()'><b>Verify_Filtering_Query_Results_Using_Sentiment</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>15</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Reapplying_Filters_On_A_Filtered_Answer()'><b>Reapplying_Filters_On_A_Filtered_Answer</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>27</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Home_Navigation()'><b>Verify_Home_Navigation</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Answers_Displayed_On_The_Screen_Should_Exactly_Match_To_The_Filter_Applied()'><b>Verify_Answers_Displayed_On_The_Screen_Should_Exactly_Match_To_The_Filter_Applied</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>15</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Email_id_Text_Does_Not_Contains_AtTheRate_Special_Sign()'><b>Verify_Email_id_Text_Does_Not_Contains_AtTheRate_Special_Sign</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Find_Help_And_Service_Box_Works_Properly()'><b>Verify_Find_Help_And_Service_Box_Works_Properly</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>9</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Share_Point_Options_Appears()'><b>Verify_All_Required_Share_Point_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>52</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_If_Password_Is_Wrong_And_Username_Is_Correct()'><b>Verify_If_Password_Is_Wrong_And_Username_Is_Correct</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Forgot_Password_Link()'><b>Verify_Forgot_Password_Link</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Filtering_Query_Results_Using_Organization()'><b>Verify_Filtering_Query_Results_Using_Organization</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>14</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Understanding_Questions()'><b>Verify_Understanding_Questions</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>18</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Suggest_A_New_Feature_Option()'><b>Verify_Suggest_A_New_Feature_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>14</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Answer_Appear_From_Transcript_Text_In_The_Text_Tab_UI()'><b>Verify_Answer_Appear_From_Transcript_Text_In_The_Text_Tab_UI</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>51</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Email_Files_Option()'><b>Verify_Email_Files_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>7</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Default_Checked_On_Of_The_Filters_When_Asked_A_New_Query()'><b>Verify_Default_Checked_On_Of_The_Filters_When_Asked_A_New_Query</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>17</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_If_Username_Field_Is_Blank()'><b>Verify_If_Username_Field_Is_Blank</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_That_All_Required_Fields_Have_A_Red_Mark()'><b>Verify_That_All_Required_Fields_Have_A_Red_Mark</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Logout_Option_Work_Properly()'><b>Verify_Logout_Option_Work_Properly</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>55</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_The_Field_Appears()'><b>Verify_All_The_Field_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Web_Sites_Option()'><b>Verify_Web_Sites_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>8</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Understanding_Questions_Using_NLU_Model()'><b>Verify_Understanding_Questions_Using_NLU_Model</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>18</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Better_Understanding_Questions()'><b>Verify_Better_Understanding_Questions</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>64</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Compare_All_Default_Functionality_Appears()'><b>Verify_Compare_All_Default_Functionality_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>11</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Successfully_Saving_A_Response_With_Thumbs_Up_And_Down()'><b>Verify_Successfully_Saving_A_Response_With_Thumbs_Up_And_Down</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>12</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Filtering_Query_Results_Using_Source_Type()'><b>Verify_Filtering_Query_Results_Using_Source_Type</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>20</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Data_Connectors_Option()'><b>Verify_Data_Connectors_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Invalid_Credentials_Are_Rejected()'><b>Verify_Invalid_Credentials_Are_Rejected</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Filtering_Query_Results_Using_Location()'><b>Verify_Filtering_Query_Results_Using_Location</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>17</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Technical_Support_Option()'><b>Verify_Technical_Support_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>11</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_The_Login_Page_Works_With_Valid_Credentails()'><b>Verify_The_Login_Page_Works_With_Valid_Credentails</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Options_Appears_On_Data_Manager_Page()'><b>Verify_All_Required_Options_Appears_On_Data_Manager_Page</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Filtering_Query_Results_Using_Person()'><b>Verify_Filtering_Query_Results_Using_Person</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>16</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_The_Filters_Are_Checked_On_By_Default()'><b>Verify_All_The_Filters_Are_Checked_On_By_Default</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>15</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_If_Both_Fields_Are_Blank()'><b>Verify_If_Both_Fields_Are_Blank</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_The_Enter_Key_WorksAs_A_Substitue()'><b>Verify_The_Enter_Key_WorksAs_A_Substitue</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>4</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Upload_Files_Option()'><b>Verify_Upload_Files_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>10</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_The_Details_Of_User_Will_Appears()'><b>Verify_All_The_Details_Of_User_Will_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Enter_Key_Functionality_For_Sign_Up_Button_Works_As_A_Substitue()'><b>Verify_Enter_Key_Functionality_For_Sign_Up_Button_Works_As_A_Substitue</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>8</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Image_Relevant_Results_Show_Up()'><b>Verify_Image_Relevant_Results_Show_Up</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>16</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Share_Point_Option()'><b>Verify_Share_Point_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>7</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_The_Cursor_Will_Be_Change_On_The_Navigation_Menu()'><b>Verify_The_Cursor_Will_Be_Change_On_The_Navigation_Menu</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>6</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_The_Resolution_Of_The_Login_Page()'><b>Verify_The_Resolution_Of_The_Login_Page</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>5</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_All_Required_Upload_FAQa_Options_Appears()'><b>Verify_All_Required_Upload_FAQa_Options_Appears</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>52</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+<tr>
+<td title='com.framework.TestCases.TestCases.Verify_Upload_FAQs_Option()'><b>Verify_Upload_FAQs_Option</b><br>Test class: com.framework.TestCases.TestCases</td>
+<td></td>
+<td>11</td>
+<td>com.framework.TestCases.TestCases@30b19518</td></tr>
+</table><p>
+</body>
+</html>
