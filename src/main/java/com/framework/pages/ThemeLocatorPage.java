@@ -112,7 +112,7 @@ public class ThemeLocatorPage extends PageBase {
 	@CacheLookup
 	public  List<WebElement> themeName;
 	
-	@FindBy(xpath = "//*[@class='Chip_root__39ywK Chip_variant-rounded__wlMyu Chip_color-secondary__3XoAu Chip_clickable__2UXA6 TopicTiles_chipTab__nTL6K']")
+	@FindBy(xpath = "//*[@class='Chip_root__6GLp8 Chip_variant-rounded__mM55D Chip_color-blue-solid__X8uG8']//*[@class='Chip_title__5+pg8']")
 	@CacheLookup
 	public  List<WebElement> allThemes;
 	

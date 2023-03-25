@@ -2975,12 +2975,18 @@ public class StepDefinitions {
 			 
 		 }
 	 }
+	 
+	 public static int CheckThemeSize() {
+			ThemeLocatorPage themepage = new ThemeLocatorPage(driver);
+			int themeSize = themepage.allThemes.size();
+			return themeSize;
+			 
+		 }
 		
-	 public static void VerifyAllThemesAreStillIfWhenChangedchannels() throws Exception {
-		  ThemeLocatorPage themepage = new ThemeLocatorPage(driver);
-		  HubbellHomePage hp = new HubbellHomePage(driver);
+	 public static void VerifyTopicsAreStillUnderAllThemeIfWhenChangedchannels() throws Exception {
 		  ArrayList<String> themeList = new ArrayList<String>();
-		  ArrayList<String> updatedthemeList = new ArrayList<String>();
+		  ArrayList<String> themeType = new ArrayList<String>();
+		  boolean flag = false;
 		  themeList.add("Environmental");
 		  themeList.add("Social");
 		  themeList.add("Governance");
@@ -2990,22 +2996,23 @@ public class StepDefinitions {
 		  
 		  ClickOnDropDownChannelIcon();
 		  GenericHelper.selectoptionfromdropDown("Product Support");
-		  ButtonHelper.click(hp.searchButtonIcon,"Search");  //changing part
 		  
-		  for(WebElement element : themepage.allThemes ) {
-			  String text = element.getText();
-			  updatedthemeList.add(text);
-		  }
-		
-		  for(int i =0; i<themeList.size(); i++) {
+		  for(int i =0; i<themeType.size(); i++) {
+			 WebElement ele = driver.findElement(By.xpath("//*[@type='button'] [text()='"+themeType.get(i)+"']"));
+			 ButtonHelper.click(ele, ele.getText());
+			 if(CheckThemeSize()>0) {
+				flag = true;
+			 }else {
+				flag = false;
+				break;
+			 }
+		}
 			
-			  if(updatedthemeList.get(i).equals(themeList.get(i))) {
-				  ObjectRepo.test.log(LogStatus.PASS, themeList.get(i)+" Theme is still after changing channel name" );
-			  }else {
-				  ObjectRepo.test.log(LogStatus.FAIL, themeList.get(i)+ " Theme is not displayed after changing channel name" );
-			  }
-		  }
-		  
+		if(flag == true) {
+			ObjectRepo.test.log(LogStatus.PASS, "Topics are Display Under the Theme" );
+	    }else {
+			ObjectRepo.test.log(LogStatus.FAIL, "Topic are not Display Under the theme" );
+		}
 	 }
 	 
 	 
